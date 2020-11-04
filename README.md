@@ -1,6 +1,6 @@
-# React-Projects
+#How to run the React-Projects
 
-To run the project 
+frontend Header 
 
 ### clone the repository: 
 git clone https://github.com/kaman1/React-Projects.git
