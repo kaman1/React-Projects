@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 
 let apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 let apiKey = process.env.REACT_APP_WEATHER_API_KEY;
@@ -11,20 +12,24 @@ const Weather = () => {
 
   useEffect(() => {
     let api = `${apiUrl}?q=${city}&appid=${apiKey}&units=imperial`;
+
     fetch(api)
       .then((res) => res.json())
       .then((data) => {
         setWeather(data);
+        console.log(data);
       });
   }, []);
 
   return (
-    <div>
+    <Wrapper>
       <h1>
-        It is curently {weather && weather.main.temp}°  in {city}
+        It is curently {weather && weather.main.temp}° in {city}
       </h1>
-    </div>
+    </Wrapper>
   );
 };
 
 export default Weather;
+
+const Wrapper = styled.section``;

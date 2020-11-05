@@ -3,7 +3,6 @@
 import React from "react";
 import styled from "styled-components";
 import { News } from "./components/News.js";
-import { Todo } from "./components/Todo.js";
 import Weather from "./components/Weather.js";
 
 export function App() {
