@@ -5,8 +5,8 @@ frontend Header
 ### clone the repository: 
 git clone https://github.com/kaman1/React-Projects.git
 
-### cd to the frontend folder
-cd frontend
+### cd folder
+cd folders
 
 ### install the node-modules
 npm install
